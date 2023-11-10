@@ -4,6 +4,7 @@ set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 set(PROJECT_NAME "bulk" CACHE STRING "Project name")
 project(${PROJECT_NAME} VERSION ${PROJECT_VERSION})
+configure_file(version.h.in version.h)
 
 set(SOURCES main.cpp  Interpreter.cpp)
 set(HEADERS Interpreter.h)
