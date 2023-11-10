@@ -11,7 +11,7 @@ set(HEADERS Interpreter.h)
 
 add_executable(bulk ${SOURCES} ${HEADERS})
 
-#this is necessary to switch off the GCC warning:
+#this is necessary to switch off the g++ warning:
 #warning: comma-separated list in using-declaration only available with '-std=c++17' or '-std=gnu++17'
 #    4 | using std::string, std::getline;
 #set(CMAKE_CXX_COMPILER_FLAGS "${CMAKE_CXX_COMPILER_FLAGS} -std=c++17")
